@@ -1,5 +1,5 @@
 {
-  "name": "freeodecamp-radio-discord",
+  "name": "coderadio-bot",
   "version": "1.0.0",
   "description": "A discord bot that plays music from the freeCodeCamp code radio",
   "main": "index.js",
