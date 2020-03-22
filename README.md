@@ -6,17 +6,17 @@ First, [invite the bot to your discord server.](https://discordapp.com/api/oauth
 
 ![][discordbot]
 
-Once the bot is in your server, enter any voice channel. Then, in any text chat, type `!play` to get the music started.
+Once the bot is in your server, enter any voice channel. Then, in any text chat, type `!radio play` to get the music started.
 
 ### Commands
-`!play` - Adds the bot to the voice channel the user who used the command is in, and starts streaming music.  
-`!pause` - Pauses the music, but keeps the bot in the voice channel. Send `!play` to resume.  
-`!stop` - Stops the music and the bot will leave the voice channel.
+`!radio play` - Adds the bot to the voice channel the user who used the command is in, and starts streaming music.  
+`!radio pause` - Pauses the music, but keeps the bot in the voice channel. Send `!play` to resume.  
+`!radio stop` - Stops the music and the bot will leave the voice channel.
+
+## Screenshots
+![][discordbot]
+![][voiceChannel]
 
 [discordbot]: ./img/discordStatus.png
 [voicechannel]: ./img/voiceChannel.png
 [textchat]: ./img/textChat.png
-
-## Screenshots
-![][voiceChannel]
-![][textchat]
