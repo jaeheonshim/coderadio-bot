@@ -1,5 +1,5 @@
 const playMusic = require("../commands/playMusic.js");
-const prefix = ".";
+const prefix = "!";
 
 module.exports = (client, msg) => {
     if (msg.content.startsWith(prefix)) {
