@@ -1,8 +1,9 @@
 let connectionDispatcher;
 
 module.exports = (message, prefix) => {
+    const voiceChannel = message.member.voice.channel;
+
     if(message.content.startsWith(`${prefix}play`)) {
-        const voiceChannel = message.member.voice.channel;
         if(!voiceChannel) {
             return message.channel.send("You need to be in a voice channel!");
         }
@@ -18,7 +19,15 @@ module.exports = (message, prefix) => {
     } else if(message.content.startsWith(`${prefix}stop`)) {
         if(connectionDispatcher) {
             connectionDispatcher.end();
+            voiceChannel.leave();
             return message.channel.send("Stopped");
+        }
+    } else if(message.content.startsWith(`${prefix}pause`)) {
+        if(connectionDispatcher) {
+            if(connectionDispatcher) {
+                connectionDispatcher.end();
+                return message.channel.send("Paused");
+            }
         }
     }
 }
